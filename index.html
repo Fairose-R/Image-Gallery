@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Theme Image Gallery</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h1 class=" text-center text-white m-3 p-3">Image Gallery</h1>
+    <div class="container gallery-container" id="galleryContainer"></div>
+
+    <div class="upload-btn-container d-flex justify-content-center">
+        <input type="file" id="fileInput" class="btn btn-primary mx-2" multiple>
+        <button id="deleteLastBtn" class="btn btn-warning mx-2">Delete Last</button>
+        <button id="deleteAllBtn" class="btn btn-danger mx-2">Delete All</button>
+    </div>
+    
+    <div class="container gallery-container d-flex flex-wrap justify-content-center" id="galleryContainer"></div>
+    
+<script src="script.js"></script>
+</body>
+</html>
